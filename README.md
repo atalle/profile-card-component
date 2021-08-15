@@ -1,6 +1,6 @@
 # Frontend Mentor - Profile card component solution
 
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is my first Frontend Mentor solution for the [profile card component challenge](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -18,10 +18,10 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### The challenge
 
-- Build out the project to the designs provided.
+- Build out the project to the (mobile & desktop) designs provided.
 
 ### Screenshot
-
+<img width="1678" alt="screenshot-desktop" src="https://user-images.githubusercontent.com/66145951/129491902-6c84cd22-0a78-43b1-9ad0-a458ec98264c.png">
 
 ### Links
 
@@ -39,11 +39,11 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### What I learned
 
-This was my first custom-coded project (not following a tutorial!) I used this exercise to practice building layouts with Flexbox, and enjoyed defining those content boxes before filling them in with content. 
+This was my first custom-coded project (not following a tutorial!) I picked this challenge to practice building layouts with Flexbox. Building the skeleton layout first (without content) helped me understand how flexbox properties affect one another. I also (finally) consumed all the documentation for CSS position properties in order to place the profile image and background patterns!
 
 ### Continued development
 
-My biggeest challenge was implementing the background pattern, and I'm not satisfied with how the pattern transitions between breakpoints. I'd like to study up on CSS positioning or learning alternative ways to solve this (maybe grid?) Open to all suggestions! 
+My biggeest challenge was implementing the background pattern, and I'm not satisfied with how the pattern transitions between breakpoints. I'd like to continue learning about CSS positioning, or find an alternative solution for this (maybe grid?) Open to all suggestions! 
 
 
 ## Author
