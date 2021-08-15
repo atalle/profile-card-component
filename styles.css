@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: hsl(185, 75%, 39%);
+  --text-primary: hsl(229, 23%, 23%);
+  --text-secondary: hsl(0, 0%, 59%);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Type styles */
+h4,
+.name,
+.stat {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  padding-bottom: 0.5rem;
+}
+
+.label {
+  color: var(--text-secondary);
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+/* BG pattern */
+.bg-patterns {
+  position: absolute;
+  z-index: 1;
+  max-width: 1000px;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+
+.pattern-top {
+  left: -800px;
+  top: -500px;
+}
+
+.pattern-bottom {
+  right: -800px;
+  bottom: -550px;
+}
+
+/* Card styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 320px;
+  height: 380px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: 38%;
+}
+
+.banner-img {
+  border-radius: 20px 20px 0 0;
+}
+
+.profile-pic {
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  top: 25%;
+  z-index: 3;
+  border-radius: 250px;
+  border: 5px solid white;
+  background-color: rosybrown;
+}
+
+.card-header .name {
+  padding-top: 3.5rem;
+  letter-spacing: 0.5px;
+}
+
+.card-header .age {
+  font-weight: 300;
+  color: var(--text-secondary);
+  padding-left: 8px;
+}
+
+.card-header .location {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.card-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #f4f4f4;
+  height: 24%;
+}
+
+.stat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .pattern-top {
+    left: -400px;
+    top: -500px;
+  }
+
+  .pattern-bottom {
+    right: -400px;
+    bottom: -500px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .pattern-top {
+    left: -100px;
+    top: -500px;
+  }
+
+  .pattern-bottom {
+    right: -100px;
+    bottom: -500px;
+  }
+
+  .card {
+    width: 360px;
+  }
+}
