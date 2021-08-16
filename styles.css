@@ -10,76 +10,38 @@
   --text-secondary: hsl(0, 0%, 59%);
 }
 
-.card-container {
+body {
+  min-height: 100vh;
+  max-width: 90em;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: var(--background);
+  justify-content: center;
   font-family: "Kumbh Sans", sans-serif;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  overflow: hidden;
+
+  background-color: var(--background);
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: top -350px left -50px, bottom -350px right -50px;
 }
 
-/* Type styles */
-h4,
-.name,
-.stat {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--text-primary);
-  padding-bottom: 0.5rem;
-}
-
-.label {
-  color: var(--text-secondary);
-  font-size: 11px;
-  letter-spacing: 1px;
-}
-
-/* BG pattern */
-.bg-patterns {
-  position: absolute;
-  z-index: 1;
-  max-width: 1000px;
-  filter: blur(1px);
-  -webkit-filter: blur(1px);
-}
-
-.pattern-top {
-  left: -800px;
-  top: -500px;
-}
-
-.pattern-bottom {
-  right: -800px;
-  bottom: -550px;
-}
-
-/* Card styles */
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
-  width: 320px;
-  height: 380px;
   border-radius: 20px;
   position: relative;
   z-index: 2;
 }
 
-.layout {
+.section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: inherit;
-  height: 38%;
 }
 
-.banner-img {
+.bg-pattern {
   border-radius: 20px 20px 0 0;
 }
 
@@ -91,43 +53,53 @@ h4,
   z-index: 3;
   border-radius: 250px;
   border: 5px solid white;
-  background-color: rosybrown;
 }
 
-.card-header .name {
-  padding-top: 3.5rem;
-  letter-spacing: 0.5px;
+.personal-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0 1.5rem;
 }
 
-.card-header .age {
+.personal-details .age {
   font-weight: 300;
   color: var(--text-secondary);
   padding-left: 8px;
 }
 
-.card-header .location {
+.personal-details .location {
   color: var(--text-secondary);
   font-size: 14px;
-}
-
-.card-stats {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  border-top: 2px solid #f4f4f4;
-  height: 24%;
 }
 
 .stat-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width: 33%;
+  padding: 1.5rem 2rem;
+  border-top: 2px solid #f4f4f4;
+}
+
+h4,
+.name,
+.number {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-primary);
+  padding-bottom: 0.5rem;
+}
+
+.label {
+  color: var(--text-secondary);
+  font-size: 11px;
+  letter-spacing: 1px;
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+/* @media only screen and (min-width: 401px) and (max-width: 960px) {
   .pattern-top {
     left: -400px;
     top: -500px;
@@ -137,10 +109,10 @@ h4,
     right: -400px;
     bottom: -500px;
   }
-}
+} */
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+/* @media only screen and (min-width: 961px) {
   .pattern-top {
     left: -100px;
     top: -500px;
@@ -154,4 +126,4 @@ h4,
   .card {
     width: 360px;
   }
-}
+} */
